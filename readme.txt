@@ -26,10 +26,10 @@ Wordpress screenshots and guide:
 http://www.helponclick.com/integration/wordpress.html
  
 Main benefits:
-+ Convert visitors into happy customers
-+ Increase sales and conversion rate
-+ Real time traffic monitoring
-+ Super easy to install
+* Convert visitors into happy customers
+* Increase sales and conversion rate
+* Real time traffic monitoring
+* Super easy to install
  
 == Installation ==
  
