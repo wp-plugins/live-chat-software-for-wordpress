@@ -13,6 +13,7 @@ This plugin installs HelpOnClick's live chat widget on your Wordpress website to
 **Increase your sale and conversion rate with live chat on your website.**
 
 Give your customers the human touch with the reassuring and satisfying return to person-to-person customer service that only live chat can provide. And not only that, tests have shown that human engagement through a live chat can have a positive effect on sales and conversions.
+
 The insanely simple copy and paste installation will have you live in less than 5 minutes. The easy-to-use HelpOnClick chat widget not only gives you the power of real time traffic monitoring, but will also have your customers asking the questions and getting the help they need.
 
 Main website:
