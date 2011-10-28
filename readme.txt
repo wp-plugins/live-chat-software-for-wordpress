@@ -35,7 +35,13 @@ Main benefits:
 1. Put this under plugins folder (/wp-content/plugins)
 2. Go to Admin->Plugins and activate the plugin "Live Chat Software by HelpOnClick"
                                            
-== Screenshots ==                
+== Screenshots ==  
+
+1. Operator Panel and Visitor chat window
+2. Themes
+3. Real Time traffic monitor
+4. Wordpress installation - step 1
+5. Wordpress installation - finshed!              
  
 == Changelog ==
  
