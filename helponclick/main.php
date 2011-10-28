@@ -1,6 +1,6 @@
 <?php
 /*
-Plugin Name: Live Chat by HelpOnClick
+Plugin Name: Live Chat Software by HelpOnClick
 Plugin URI: http://www.helponclick.com?utm_campaign=wordpress&utm_medium=web&utm_source=plugin_page
 Description: Chat with your website visitors - live chat plugin for HelpOnClick software. <a href='options-general.php?page=helponclick'>Configure</a>
 Version: 1.1
