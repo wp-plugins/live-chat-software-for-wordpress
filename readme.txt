@@ -19,6 +19,9 @@ http://www.helponclick.com
 
 Take the product tour:
 http://www.helponclick.com/screenshots.php
+
+Wordpress screenshots and guide:
+http://www.helponclick.com/integration/wordpress.html
  
 Main benefits:
 1. Convert visitors into happy customers
