@@ -22,20 +22,16 @@ http://www.helponclick.com/screenshots.php
  
 Main benefits:
 1. Convert visitors into happy customers
-1. Increase sales and conversion rate
-1. Real time traffic monitoring
-1. Super easy to install
+2. Increase sales and conversion rate
+3. Real time traffic monitoring
+4. Super easy to install
  
 == Installation ==
  
 1. Put this under plugins folder (/wp-content/plugins)
 2. Go to Admin->Plugins and activate the plugin "Live Chat by HelpOnClick"
                                            
-== Screenshots ==
- 
-1. This screen shot description corresponds to screenshot-1.(png|jpg|jpeg|gif). Note that the screenshot is taken from
-the directory of the stable readme.txt, so in this case, `/tags/4.3/screenshot-1.png` (or jpg, jpeg, gif)
-2. This is the second screen shot
+== Screenshots ==                
  
 == Changelog ==
  
