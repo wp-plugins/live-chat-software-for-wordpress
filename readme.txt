@@ -45,6 +45,9 @@ Main benefits:
 5. Wordpress installation - finshed!              
  
 == Changelog ==
+
+= 1.1 =
+Bug fixes
  
 = 1.0 =
 First release  
