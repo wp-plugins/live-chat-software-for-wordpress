@@ -109,10 +109,10 @@ function helponclick_options_page() {
     $options_account_email = get_option('helponclick_account_email');
     $options_account_password = get_option('helponclick_account_password');
     $options_code_script = get_option('helponclick_code_script');
-?>
-<link rel="stylesheet" href="<?php bloginfo('url'); ?>/wp-content/plugins/helponclick/nyroModal.css" type="text/css" media="screen" />
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.js"></script>
-<script type="text/javascript" src="<?php bloginfo('url'); ?>/wp-content/plugins/helponclick/jquery.nyroModal.custom.js"></script>
+?>                                                                                                                                           
+<link rel="stylesheet" href="<?php echo plugin_dir_url( __FILE__ ) ?>nyroModal.css" type="text/css" media="screen" />
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.js"></script>                               
+<script type="text/javascript" src="<?php echo plugin_dir_url( __FILE__ ) ?>jquery.nyroModal.custom.js"></script>
 <script type="text/javascript">
 $(function() {
   $('.nyroModal').nyroModal();
