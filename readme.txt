@@ -26,10 +26,10 @@ Wordpress screenshots and guide:
 http://www.helponclick.com/integration/wordpress.html
  
 Main benefits:
-* Convert visitors into happy customers
-* Increase sales and conversion rate
-* Real time traffic monitoring
-* Super easy to install
+*   Convert visitors into happy customers
+*   Increase sales and conversion rate
+*   Real time traffic monitoring
+*   Super easy to install
  
 == Installation ==
  
@@ -39,7 +39,7 @@ Main benefits:
 == Screenshots ==  
 
 1. Wordpress installation - step 1. Login or create HelpOnClick account
-2. Wordpress installation - finshed!  
+2. Wordpress installation - finished!  
 3. Operator Panel and Visitor chat window
 4. Themes
 5. Real Time traffic monitor            
