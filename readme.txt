@@ -38,11 +38,11 @@ Main benefits:
                                            
 == Screenshots ==  
 
-1. Operator Panel and Visitor chat window
-2. Themes
-3. Real Time traffic monitor
-4. Wordpress installation - step 1
-5. Wordpress installation - finshed!              
+1. Wordpress installation - step 1. Login or create HelpOnClick account
+2. Wordpress installation - finshed!  
+3. Operator Panel and Visitor chat window
+4. Themes
+5. Real Time traffic monitor            
  
 == Changelog ==
 
