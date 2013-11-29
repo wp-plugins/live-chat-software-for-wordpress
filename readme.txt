@@ -42,7 +42,8 @@ Main benefits:
 2. Wordpress installation - finished!  
 3. Operator Panel and Visitor chat window
 4. Themes
-5. Real Time traffic monitor            
+5. Real Time traffic monitor    
+6. Chat widget with proactive, rule based, chat invitations   
  
 == Changelog ==
 
