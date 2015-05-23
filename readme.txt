@@ -3,7 +3,7 @@
 Contributors: neran                     
 Tags: chat, live chat, live chat software, live support, live support software, live help, live help software,customer help, customer service, customer support, ecommerce, increase sales, livechat, online support, plugin
 Requires at least: 2.0.2
-Tested up to: 3.7.1   
+Tested up to: 4.2.2   
 Stable tag: trunk
  
 This plugin installs HelpOnClick's live chat widget on your Wordpress website to allow real time chat with your website visitors
@@ -47,7 +47,7 @@ Main benefits:
  
 == Changelog ==
 
-= 1.1 =
+= 1.2 =
 Compatibility fixes
 
 = 1.1 =
