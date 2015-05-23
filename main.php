@@ -11,12 +11,13 @@ License: GPL2
 ?>
 <?php 
 // add the admin settings and such
+session_start();
 add_action('admin_init', 'helponclick_admin_init');
 add_action('wp_footer', 'helponclick_footer');
 // add the admin options page
 add_action('admin_menu', 'helponclick_admin_add_page');
 
-function get_remote($url, $port=80)
+function helponclick_get_remote($url, $port=80)
 {
     if(function_exists("curl_init"))
     {
@@ -39,6 +40,11 @@ function get_remote($url, $port=80)
     return $data;
 }
 
+function helponclick_add_admin_notification($msg){
+    $_SESSION['helponclick_admin_notice'] = $msg;
+}
+
+
 function helponclick_admin_init(){
     $response_errors = array ("Invalid email address<br />",
                                 "error:Can't find account, please contact support"); 
@@ -50,15 +56,11 @@ function helponclick_admin_init(){
         
     }
     if (isset($_GET['reset_success'])) {
-        echo '    <div id="message" class="updated fade">
-                    <p>'.__('Reset success', 'helponclick').'</p>
-                </div>';
+        helponclick_add_admin_notification('Reset success');
 
     }
     if (isset($_GET['connect_success'])) {
-        echo '    <div id="message" class="updated fade">
-                    <p>'.__('Connected successfully, chat is installed', 'helponclick').'</p>
-                </div>';
+        helponclick_add_admin_notification('Connected successfully, chat is installed');
 
     }
     if (isset($_GET['connect_account']) && count($_POST)) 
@@ -66,14 +68,12 @@ function helponclick_admin_init(){
         if($_POST['helponclick_account_email']!="" && $_POST['helponclick_account_password']!="")
         {
             //$response = file_get_contents('http://www.helponclick.com/code.php?email='.$_POST['helponclick_account_email'].'&password='.md5($_POST['helponclick_account_password']));
-            $response = get_remote('http://www.helponclick.com/code.php?email='.$_POST['helponclick_account_email'].'&password='.md5($_POST['helponclick_account_password']));
+            $response = helponclick_get_remote('http://www.helponclick.com/code.php?email='.$_POST['helponclick_account_email'].'&password='.md5($_POST['helponclick_account_password']));
             
             //if (in_array(trim($response), $response_errors)) 
             if (!strstr($response, "Error")===false) 
             {
-                echo '    <div id="message" class="updated fade">
-                            <p>'.$response.'</p>
-                        </div>';            
+                helponclick_add_admin_notification($response);
             } 
             else 
             {
@@ -86,9 +86,7 @@ function helponclick_admin_init(){
         }
         else
         {
-                echo '<div id="message" class="updated fade">
-                        <p>'.__('Email address or password missing', 'helponclick').'</p>
-                    </div>';    
+            helponclick_add_admin_notification('Email address or password missing');
         }
     }
     register_setting( 'helponclick_account', 'helponclick_account_email');
@@ -104,6 +102,21 @@ function helponclick_footer(){
         echo $script;
     }
 }
+
+function helponclick_admin_notification(){
+    if (isset($_SESSION['helponclick_admin_notice'])) {
+
+        echo '<div class="wrap">';
+        echo '<div id="message" class="updated fade"><p>'
+          . __($_SESSION['helponclick_admin_notice'], 'helponclick') .
+          '</p></div>';
+        echo '</div>';
+        unset($_SESSION['helponclick_admin_notice']);
+    }
+}
+
+add_action( 'admin_notices', 'helponclick_admin_notification' );
+
 // display the admin options page
 function helponclick_options_page() {
     $options_account_email = get_option('helponclick_account_email');
